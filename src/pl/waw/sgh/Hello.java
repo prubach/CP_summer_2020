@@ -1,9 +1,11 @@
+package pl.waw.sgh;
+
 import java.util.Date;
 
 public class Hello {
 
     public static void main(String[] args) throws InterruptedException {
-        System.out.println("Hello");
+        System.out.println("pl.waw.sgh.Hello");
         int a = 5;
         int b;
         b = 8;
