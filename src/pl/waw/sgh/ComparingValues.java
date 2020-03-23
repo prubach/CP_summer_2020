@@ -27,7 +27,7 @@ public class ComparingValues {
         }
 
         if (s1.equals(s2)) {
-            System.out.println("s1 equal s2");
+            System.out.println("s1 equal s2 using equals");
         }
     }
 }
