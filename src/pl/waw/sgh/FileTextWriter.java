@@ -12,9 +12,13 @@ public class FileTextWriter {
         FileWriter fw = new FileWriter(myFile);
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write("Our first line of text");
-        bw.newLine();
+        //bw.newLine();
         bw.write("Our 2nd line of text");
-        bw.newLine();
+        //bw.write("\n");
+        bw.write(10);
+        bw.write("sghsogjosaegjoswgjow gjh ogj oagag oiagoiagoia goasgoi saoiusaoi usgu sguas guosauosaugoaugosugosugosugousogusogusoguo sgosugosgus");
+        //bw.newLine();
+        bw.write(10);
         bw.flush();
         bw.write("5252.252");
         //Double d1 = Double.valueOf("5252.252");
