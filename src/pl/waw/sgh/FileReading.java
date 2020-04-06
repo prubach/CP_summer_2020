@@ -8,6 +8,7 @@ public class FileReading {
 
     public static void main(String[] args) throws FileNotFoundException {
         String fileName = "test.txt";
+        //String fileName = "/home/pol/dev/CP_summer_2020/test.txt";
         String cwd = System.getProperty("user.dir");
         System.out.println(cwd);
 
