@@ -1,15 +1,22 @@
 package pl.waw.sgh.obj;
 
 public class Rectangle {
-    int parA;
+    private int parA;
     int parB;
 
-    void setParams(int a, int b) {
-        parA = a;
+    public Rectangle() {
+        System.out.println("Running constructor of Rectangle");
+        parA = 2;
+        parB = 3;
+    }
+
+    public void setParams(int parA, int b) {
+        System.out.println("Changing parameters parA from: " + this.parA + " to: " + parA);
+        this.parA = parA;
         parB = b;
     }
 
-    int calcSurface() {
+    public int calcSurface() {
         return parA*parB;
     }
 }

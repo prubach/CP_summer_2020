@@ -4,6 +4,8 @@ public class FunctionsProcedures {
 
     public static int countBowls(int row) {
         //TODO finish
+        Integer a = 6;
+
         return row;
     }
 
