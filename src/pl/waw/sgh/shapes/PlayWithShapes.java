@@ -12,6 +12,10 @@ public class PlayWithShapes {
         s2.setParams(10, 56);
         double surf = r2.calcSurface();
         System.out.println(surf);
+
+        System.out.println(r2);
+        System.out.println(s2.tostring());
+
         //s1.calc
     }
 

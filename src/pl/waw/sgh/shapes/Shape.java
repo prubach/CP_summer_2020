@@ -16,4 +16,9 @@ public abstract class Shape {
         this.parA = parA;
         parB = b;
     }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " ["+ parA + ", " + parB + "]";
+    }
 }
