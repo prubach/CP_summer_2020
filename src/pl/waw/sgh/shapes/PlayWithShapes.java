@@ -13,10 +13,13 @@ public class PlayWithShapes {
         double surf = r2.calcSurface();
         System.out.println(surf);
 
+        System.out.println("S2 surface: " + s2.calcSurface());
+
         System.out.println(r2);
         System.out.println(s2.toString());
 
-        //s1.calc
+        //TODO
+        //Circle c1 = new Circle(5);
     }
 
 }

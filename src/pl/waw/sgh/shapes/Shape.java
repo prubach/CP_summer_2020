@@ -17,6 +17,11 @@ public abstract class Shape {
         parB = b;
     }
 
+    public abstract double calcSurface();
+//    {
+//        return -1;
+//    }
+
     @Override
     public String toString() {
         return getClass().getSimpleName() + " ["+ parA + ", " + parB + "]";
