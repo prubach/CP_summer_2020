@@ -2,7 +2,7 @@ package pl.waw.sgh.obj;
 
 public class Rectangle {
     private int parA;
-    int parB;
+    protected int parB;
 
     static int parC = 8;
 
