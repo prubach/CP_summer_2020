@@ -19,7 +19,9 @@ public class PlayWithShapes {
         System.out.println(s2.toString());
 
         //TODO
-        //Circle c1 = new Circle(5);
+        Circle c1 = new Circle(5);
+        System.out.println("C1: " + c1);
+        System.out.println("Surface C1: " + c1.calcSurface());
     }
 
 }
