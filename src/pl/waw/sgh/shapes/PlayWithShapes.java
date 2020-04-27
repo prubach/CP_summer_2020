@@ -14,7 +14,7 @@ public class PlayWithShapes {
         System.out.println(surf);
 
         System.out.println(r2);
-        System.out.println(s2.tostring());
+        System.out.println(s2.toString());
 
         //s1.calc
     }
