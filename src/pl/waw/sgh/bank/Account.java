@@ -26,6 +26,7 @@ public abstract class Account {
     }
 
     public void deposit(BigDecimal amount) {
+        //TODO: add checks for different situations when deposit may not be run successfully
         this.balance = balance.add(amount);
     }
 
@@ -34,6 +35,7 @@ public abstract class Account {
     }
 
     public void charge(BigDecimal amount) {
+        //TODO: add checks for different situations when charge may not be run successfully
         this.balance = balance.subtract(amount);
     }
 

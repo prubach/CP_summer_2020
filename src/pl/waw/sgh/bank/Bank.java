@@ -34,6 +34,19 @@ public class Bank {
         return newAccount(false, currency, customer);
     }
 
+    public Account findAccountById(Integer accId) {
+        //TODO: May be needed for transfer...
+        // Loop through list of accounts and if accId matches then return that account
+
+        return null;
+    }
+
+    public void transfer(Integer fromAccountId, Integer toAccountId, Double amount) {
+        //TODO: Find relevant account objects given their Ids and perform actions to transfer
+        // Check if account exists etc.
+
+    }
+
     @Override
     public String toString() {
         return "Bank{" +
