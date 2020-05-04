@@ -68,11 +68,10 @@ public abstract class Account {
 
     @Override
     public String toString() {
-        return this.getClass().getSimpleName() + "{" +
+        return this.getClass().getSimpleName().replace("Account", "") + "{" +
                 "id=" + id +
-                ", balance=" + balance +
-                ", currency='" + currency + '\'' +
-                ", customer=" + customer +
+                ", " + balance + " " + currency + '\'' +
+                ", cust=" + customer.getId() + " " + customer.getLastName() +
                 '}';
     }
 }
