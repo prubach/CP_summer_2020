@@ -54,6 +54,6 @@ public class Customer {
                 ", fName='" + firstName + '\'' +
                 ", lName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                '}';
+                "}\n";
     }
 }

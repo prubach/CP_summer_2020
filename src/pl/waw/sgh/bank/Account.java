@@ -72,6 +72,6 @@ public abstract class Account {
                 "id=" + id +
                 ", " + balance + " " + currency + '\'' +
                 ", cust=" + customer.getId() + " " + customer.getLastName() +
-                '}';
+                "}\n";
     }
 }
