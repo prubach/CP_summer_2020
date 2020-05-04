@@ -19,7 +19,7 @@ public class PlayWithShapesInSet {
         }
 
         // Use compareTo in Shape to compare based on surface
-        Collections.sort(shapeList);
+        //Collections.sort(shapeList);
         // Use ShapeComparator to compare based on sum of parameters
         Collections.sort(shapeList, new ShapeComparator());
         System.out.println("After sorting:");
