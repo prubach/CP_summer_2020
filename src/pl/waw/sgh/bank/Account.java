@@ -21,6 +21,22 @@ public abstract class Account {
         this.id = lastAccountId++;
     }
 
+    public void deposit(Double amount) {
+        deposit(BigDecimal.valueOf(amount));
+    }
+
+    public void deposit(BigDecimal amount) {
+        this.balance = balance.add(amount);
+    }
+
+    public void charge(Double amount) {
+        charge(BigDecimal.valueOf(amount));
+    }
+
+    public void charge(BigDecimal amount) {
+        this.balance = balance.subtract(amount);
+    }
+
     public static Integer getLastAccountId() {
         return lastAccountId;
     }
@@ -32,10 +48,6 @@ public abstract class Account {
     public BigDecimal getBalance() {
         //BigDecimal b = balance.add(new BigDecimal(35));
         return balance;
-    }
-
-    public void setBalance(BigDecimal balance) {
-        this.balance = balance;
     }
 
     public String getCurrency() {
