@@ -37,14 +37,21 @@ public class Bank {
     public Account findAccountById(Integer accId) {
         //TODO: May be needed for transfer...
         // Loop through list of accounts and if accId matches then return that account
-
-        return null;
+        for (Account acc : accountList) {
+            if (accId.equals(acc.getId()))
+                return acc;
+        }
+        throw new AccountNotFoundException("Account with ID: " + accId + " not found!");
+        //return null;
     }
 
     public void transfer(Integer fromAccountId, Integer toAccountId, Double amount) {
         //TODO: Find relevant account objects given their Ids and perform actions to transfer
         // Check if account exists etc.
-
+        Account fromAccount = findAccountById(fromAccountId);
+        Account toAccount = findAccountById(toAccountId);
+        fromAccount.charge(amount);
+        toAccount.deposit(amount);
     }
 
     @Override

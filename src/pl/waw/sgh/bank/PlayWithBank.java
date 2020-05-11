@@ -11,8 +11,12 @@ public class PlayWithBank {
         a1.deposit(150d);
 
         a1.charge(40d);
-        Account a2 = myBank.newSavingsAccount("PLN", c2);
+        Account a2 = myBank.newSavingsAccount("EUR", c2);
 
+        myBank.transfer(4, 7, 60d);
+
+        //myBank.transfer(a1.getId(), a2.getId(), 60d);
         System.out.println(myBank);
+        //System.exit(100);
     }
 }
