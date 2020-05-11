@@ -41,7 +41,8 @@ public class Bank {
             if (accId.equals(acc.getId()))
                 return acc;
         }
-        throw new AccountNotFoundException("Account with ID: " + accId + " not found!", accId);
+        return null;
+        //throw new AccountNotFoundException("Account with ID: " + accId + " not found!", accId);
         //return null;
     }
 
