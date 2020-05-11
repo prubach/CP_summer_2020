@@ -13,13 +13,17 @@ public class PlayWithBank {
 
             Account a2 = myBank.newSavingsAccount("EUR", c2);
             a1.charge(40d);
-            myBank.transfer(0, 1, 160d);
-        } catch (AccountNotFoundException ae) {
+            myBank.transfer(0, 1, 60d);
+        } catch (BankException be) {
+            System.out.println(be.getMessage());
+        }
+
+        /*catch (AccountNotFoundException ae) {
             System.out.println(ae.getMessage());
             System.out.println(ae.getAccId());
         } catch (NotEnoughMoneyException ne) {
             System.out.println(ne.getMessage());
-        }
+        }*/
 
         //myBank.transfer(a1.getId(), a2.getId(), 60d);
         System.out.println(myBank);

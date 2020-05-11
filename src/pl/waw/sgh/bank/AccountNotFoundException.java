@@ -1,6 +1,6 @@
 package pl.waw.sgh.bank;
 
-public class AccountNotFoundException extends Exception {
+public class AccountNotFoundException extends BankException {
     private Integer accId;
 
     public AccountNotFoundException(String message, Integer accid) {
