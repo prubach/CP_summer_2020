@@ -45,12 +45,13 @@ public class Bank {
         //return null;
     }
 
-    public void transfer(Integer fromAccountId, Integer toAccountId, Double amount) throws AccountNotFoundException {
+    public void transfer(Integer fromAccountId, Integer toAccountId, Double amount)
+            throws AccountNotFoundException, NotEnoughMoneyException {
         //TODO: Find relevant account objects given their Ids and perform actions to transfer
         // Check if account exists etc.
         Account fromAccount = findAccountById(fromAccountId);
-        fromAccount.charge(amount);
         Account toAccount = findAccountById(toAccountId);
+        fromAccount.charge(amount);
         toAccount.deposit(amount);
     }
 

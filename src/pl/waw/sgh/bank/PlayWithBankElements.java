@@ -11,7 +11,11 @@ public class PlayWithBankElements {
         Account a1 = new DebitAccount("EUR", c1);
         a1.deposit(150d);
 
-        a1.charge(40d);
+        try {
+            a1.charge(40d);
+        } catch (NotEnoughMoneyException e) {
+            System.out.println(e.getMessage());
+        }
         System.out.println(a1);
         Account a2 = new SavingsAccount("PLN", c2);
         System.out.println(a2);

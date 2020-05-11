@@ -30,12 +30,17 @@ public abstract class Account {
         this.balance = balance.add(amount);
     }
 
-    public void charge(Double amount) {
+    public void charge(Double amount) throws NotEnoughMoneyException {
         charge(BigDecimal.valueOf(amount));
     }
 
-    public void charge(BigDecimal amount) {
+    public void charge(BigDecimal amount) throws NotEnoughMoneyException {
         //TODO: add checks for different situations when charge may not be run successfully
+        if (amount.compareTo(balance)>0) {
+            amount.setScale(2);
+            throw new NotEnoughMoneyException(String.format(
+                    "Not enough money on account, requested %f, found %f", amount, balance));
+        }
         this.balance = balance.subtract(amount);
     }
 
