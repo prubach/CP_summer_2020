@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="pl.waw.sgh.bank.BankOperations">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="15" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="5" left="5" bottom="5" right="5"/>
+    <constraints>
+      <xy x="20" y="20" width="1494" height="685"/>
+    </constraints>
+    <properties>
+      <background color="-5131855"/>
+      <enabled value="true"/>
+      <foreground color="-16740463"/>
+    </properties>
+    <border type="line" title="Bank Operations" title-justification="2" title-position="3">
+      <font name="Courier New" size="36" style="1"/>
+      <title-color color="-16740463"/>
+      <color color="-16740463"/>
+    </border>
+    <children>
+      <component id="a33c7" class="javax.swing.JCheckBox" binding="addNewCostumerCheckBox" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <enabled value="true"/>
+          <font name="Courier New" size="30" style="1"/>
+          <foreground color="-16740463"/>
+          <hideActionText value="false"/>
+          <text value="Add New Costumer"/>
+        </properties>
+      </component>
+      <hspacer id="6bd78">
+        <constraints>
+          <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="71588">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="20" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="75ad6" class="javax.swing.JCheckBox" default-binding="true">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <enabled value="true"/>
+          <font name="Courier New" size="30" style="1"/>
+          <foreground color="-16740463"/>
+          <hideActionText value="false"/>
+          <text value="Add New Account"/>
+        </properties>
+      </component>
+      <component id="1712b" class="javax.swing.JFormattedTextField" binding="firstNameFormattedTextField" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5197648"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="First Name"/>
+        </properties>
+      </component>
+      <component id="10a9e" class="javax.swing.JTextField" binding="lastNameTextField" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5197648"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="Last Name"/>
+        </properties>
+      </component>
+      <component id="5fd7d" class="javax.swing.JTextField" binding="eMailAdressTextField" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <text value="E-mail Adress"/>
+        </properties>
+      </component>
+      <component id="6c3b" class="javax.swing.JTextField" binding="loginTextField" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="Login"/>
+        </properties>
+      </component>
+      <component id="17fe0" class="javax.swing.JTextField" binding="passwordTextField" default-binding="true">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="Password"/>
+        </properties>
+      </component>
+      <component id="a576f" class="javax.swing.JTextField" binding="firstNameTextField" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="cf14b" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="5087b" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="ea576" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="7c417" class="javax.swing.JPasswordField" binding="passwordField1" default-binding="true">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="cf1cb" class="javax.swing.JTextField" binding="firstNameOfATextField" default-binding="true">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="350" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value=" First Name of a Customer"/>
+        </properties>
+      </component>
+      <component id="76166" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints>
+          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="f0238" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="350" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value=" Last Name of a Customer"/>
+        </properties>
+      </component>
+      <component id="58918" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="7b83c" class="javax.swing.JCheckBox" binding="depositAccountCheckBox" default-binding="true">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="80" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <hideActionText value="true"/>
+          <text value="Deposit Account"/>
+        </properties>
+      </component>
+      <component id="e385f" class="javax.swing.JCheckBox" binding="savingAccountCheckBox" default-binding="true">
+        <constraints>
+          <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="80" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <text value="Saving Account"/>
+        </properties>
+      </component>
+      <component id="56418" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="350" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="Account ID"/>
+        </properties>
+      </component>
+      <component id="e3f01" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="350" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="Currency"/>
+        </properties>
+      </component>
+      <component id="52421" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="10" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="350" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="Current Deposit"/>
+        </properties>
+      </component>
+      <component id="f2618" class="javax.swing.JFormattedTextField" binding="formattedTextField1" default-binding="true">
+        <constraints>
+          <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="2"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="1305e" class="javax.swing.JFormattedTextField" default-binding="true">
+        <constraints>
+          <grid row="10" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="24" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="2"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="ec672" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+        <constraints>
+          <grid row="8" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-5131855"/>
+          <model>
+            <item value="EUR"/>
+            <item value="PLN"/>
+            <item value="USD"/>
+          </model>
+        </properties>
+      </component>
+      <hspacer id="67d74">
+        <constraints>
+          <grid row="11" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="6c992" class="javax.swing.JTextField" binding="fromTextField" default-binding="true">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="80" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="From"/>
+        </properties>
+      </component>
+      <component id="a7863" class="javax.swing.JTextField" binding="accountIDTextField" default-binding="true">
+        <constraints>
+          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="16" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value="Account ID"/>
+        </properties>
+      </component>
+      <component id="88057" class="javax.swing.JCheckBox" default-binding="true">
+        <constraints>
+          <grid row="12" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <enabled value="true"/>
+          <font name="Courier New" size="30" style="1"/>
+          <foreground color="-16740463"/>
+          <hideActionText value="false"/>
+          <horizontalAlignment value="2"/>
+          <text value="Transfer"/>
+        </properties>
+      </component>
+      <component id="38a84" class="javax.swing.JCheckBox" default-binding="true">
+        <constraints>
+          <grid row="12" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <enabled value="true"/>
+          <font name="Courier New" size="30" style="1"/>
+          <foreground color="-16740463"/>
+          <hideActionText value="false"/>
+          <horizontalAlignment value="0"/>
+          <text value="Charge"/>
+        </properties>
+      </component>
+      <component id="6f218" class="javax.swing.JCheckBox" default-binding="true">
+        <constraints>
+          <grid row="12" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <enabled value="true"/>
+          <font name="Courier New" size="30" style="1"/>
+          <foreground color="-16740463"/>
+          <hideActionText value="false"/>
+          <horizontalAlignment value="4"/>
+          <text value="Deposit"/>
+        </properties>
+      </component>
+      <component id="93ca1" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="14" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="Figure"/>
+        </properties>
+      </component>
+      <component id="286b0" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="14" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="16" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value="..."/>
+        </properties>
+      </component>
+      <component id="dd3a" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="14" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="16" style="1"/>
+          <foreground color="-5131855"/>
+          <horizontalAlignment value="0"/>
+          <text value="Account ID"/>
+        </properties>
+      </component>
+      <component id="9cfab" class="javax.swing.JTextField" default-binding="true">
+        <constraints>
+          <grid row="14" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="80" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <editable value="false"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-16740463"/>
+          <horizontalAlignment value="0"/>
+          <text value="To"/>
+        </properties>
+      </component>
+      <hspacer id="3f945">
+        <constraints>
+          <grid row="13" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="27fc1" class="javax.swing.JComboBox" default-binding="true">
+        <constraints>
+          <grid row="14" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16740463"/>
+          <font name="Courier New" size="18" style="1"/>
+          <foreground color="-5131855"/>
+          <model>
+            <item value="EUR"/>
+            <item value="PLN"/>
+            <item value="USD"/>
+          </model>
+        </properties>
+      </component>
+      <component id="5e8eb" class="javax.swing.JButton" binding="sendButton" default-binding="true">
+        <constraints>
+          <grid row="14" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="40"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5131855"/>
+          <borderPainted value="false"/>
+          <font name="Courier New" size="30" style="1"/>
+          <foreground color="-16740463"/>
+          <hideActionText value="true"/>
+          <horizontalTextPosition value="0"/>
+          <inheritsPopupMenu value="false"/>
+          <selected value="false"/>
+          <text value="Send"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
