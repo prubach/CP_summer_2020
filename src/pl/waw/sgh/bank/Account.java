@@ -1,8 +1,9 @@
 package pl.waw.sgh.bank;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public abstract class Account {
+public abstract class Account implements Serializable {
 
     private static Integer lastAccountId = 0;
 

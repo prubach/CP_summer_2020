@@ -1,6 +1,8 @@
 package pl.waw.sgh.bank;
 
-public class Customer {
+import java.io.Serializable;
+
+public class Customer implements Serializable {
 
     private static Integer lastCustomerId = 0;
 
