@@ -17,6 +17,7 @@ public class CustomerData {
     protected JButton nextButton;
     protected JTextField lastNameTextField;
     protected JTextField emailTextField;
+    protected JTextField customerIDtextField;
 
     private void createUIComponents() {
         // TODO: place custom component creation code here

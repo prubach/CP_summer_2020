@@ -9,6 +9,26 @@ public class Bank {
 
     private List<Account> accountList = new ArrayList<>();
 
+    public Customer nextCustomer(Customer curCustomer) {
+        int curCustIdx = customerList.indexOf(curCustomer);
+        if ((curCustIdx >= 0) && (curCustIdx < customerList.size()-1)) {
+            return customerList.get(curCustIdx+1);
+        } else {
+            return null;
+        }
+    }
+
+    public Customer previousCustomer(Customer curCustomer) {
+        int curCustIdx = customerList.indexOf(curCustomer);
+        if (curCustIdx > 0) {
+            return customerList.get(curCustIdx-1);
+        } else {
+            return null;
+        }
+    }
+
+
+
     public Customer newCustomer(String firstName, String lastName, String email) {
         Customer c = new Customer(firstName, lastName, email);
         customerList.add(c);
