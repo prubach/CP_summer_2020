@@ -1,8 +1,12 @@
 package pl.waw.sgh.bank;
 
-import java.io.Serializable;
+import com.github.cliftonlabs.json_simple.Jsonable;
 
-public class Customer implements Serializable {
+import java.io.IOException;
+import java.io.Serializable;
+import java.io.Writer;
+
+public class Customer implements Serializable, Jsonable {
 
     private static Integer lastCustomerId = 0;
 
@@ -57,5 +61,15 @@ public class Customer implements Serializable {
                 ", lName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 "}\n";
+    }
+
+    @Override
+    public String toJson() {
+        return null;
+    }
+
+    @Override
+    public void toJson(Writer writer) throws IOException {
+
     }
 }

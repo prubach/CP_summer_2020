@@ -1,9 +1,11 @@
 package pl.waw.sgh.bank;
 
+import com.github.cliftonlabs.json_simple.Jsonable;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-public abstract class Account implements Serializable {
+public abstract class Account implements Serializable, Jsonable {
 
     private static Integer lastAccountId = 0;
 
