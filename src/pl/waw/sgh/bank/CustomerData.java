@@ -6,17 +6,17 @@ import java.awt.*;
 
 public class CustomerData {
 
-    private JPanel panel1;
-    private JFormattedTextField firstNameFormattedTextField;
-    private JTextField lastNameLabelTextField;
-    private JTextField eMailAdressLabelTextField;
-    private JTextField firstNameTextField;
-    private JButton sendButton;
-    private JButton previousButton;
-    private JButton newButton;
-    private JButton nextButton;
-    private JTextField lastNameTextField;
-    private JTextField emailTextField;
+    protected JPanel mainCustomerPanel;
+    protected JFormattedTextField firstNameFormattedTextField;
+    protected JTextField lastNameLabelTextField;
+    protected JTextField eMailAdressLabelTextField;
+    protected JTextField firstNameTextField;
+    protected JButton sendButton;
+    protected JButton previousButton;
+    protected JButton newButton;
+    protected JButton nextButton;
+    protected JTextField lastNameTextField;
+    protected JTextField emailTextField;
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
