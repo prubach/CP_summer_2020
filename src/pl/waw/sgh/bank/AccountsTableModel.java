@@ -37,7 +37,18 @@ public class AccountsTableModel extends DefaultTableModel {
         return vc;
     }
 
-
+    @Override
+    public void setValueAt(Object o, int rowId, int colId) {
+        super.setValueAt(o, rowId, colId);
+        Account acc = accountList.get(rowId);
+        switch (colId) {
+            case 2:
+                acc.setCurrency((String)o);
+                break;
+            case 3:
+                acc.setBalance((BigDecimal)o);
+        }
+    }
 
     @Override
     public boolean isCellEditable(int rowId, int colId) {

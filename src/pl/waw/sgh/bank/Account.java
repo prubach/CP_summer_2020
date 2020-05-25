@@ -57,6 +57,10 @@ public abstract class Account implements Serializable {
         //BigDecimal b = balance.add(new BigDecimal(35));
         return balance;
     }
+    // for Account Table
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
+    }
 
     public String getCurrency() {
         return currency;
