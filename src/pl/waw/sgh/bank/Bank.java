@@ -67,6 +67,15 @@ public class Bank implements Serializable {
         //return null;
     }
 
+    public List<Account> findAccountsByCustomer(Customer cust) {
+        List<Account> accs = new ArrayList<>();
+        for (Account acc : accountList) {
+            if (cust.equals(acc.getCustomer()))
+                accs.add(acc);
+        }
+        return accs;
+    }
+
     public void transfer(Integer fromAccountId, Integer toAccountId, Double amount)
             throws AccountNotFoundException, NotEnoughMoneyException {
         //TODO: Find relevant account objects given their Ids and perform actions to transfer

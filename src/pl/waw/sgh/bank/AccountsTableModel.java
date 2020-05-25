@@ -16,6 +16,13 @@ public class AccountsTableModel extends DefaultTableModel {
         super(cols, 0);
     }
 
+    public void clearTable() {
+        accountList.clear();
+        dataVector.clear();
+        fireTableDataChanged();
+    }
+
+
     public void addRows(List<Account> accounts) {
         for (Account acc : accounts)
             addRow(acc);

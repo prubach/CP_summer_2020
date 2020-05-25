@@ -59,6 +59,9 @@ public class CustomerDataLogic extends CustomerData {
         lastNameTextField.setText(customer.getLastName());
         emailTextField.setText(customer.getEmail());
         customerIDtextField.setText(customer.getId().toString());
+
+        accountsTableModel.clearTable();
+        accountsTableModel.addRows(bank.findAccountsByCustomer(currentCust));
     }
 
 
