@@ -27,7 +27,10 @@ public class CustomerDataLogic extends CustomerData {
                 currentCust = newCust;
                 JOptionPane.showMessageDialog(null, "Saving the customer: "
                         + firstNameTextField.getText() + " bank: " + bank.toString());
-
+                Account newAcc = bank.newAccount(true, "EUR", newCust);
+                accountsTableModel.addRow(newAcc);
+                newAcc = bank.newAccount(false, "EUR", newCust);
+                accountsTableModel.addRow(newAcc);
             }
         });
         nextButton.addActionListener(new ActionListener() {
