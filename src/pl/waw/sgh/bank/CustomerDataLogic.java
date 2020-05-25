@@ -72,6 +72,17 @@ public class CustomerDataLogic extends CustomerData {
         ctxMenu.add(newSavingsAcc);
         ctxMenu.add(newDabitAcc);
 
+        JMenuItem delAcc = new JMenuItem("Delete Account");
+        delAcc.addActionListener(e -> {
+            int[] selectedRows = accountsTable.getSelectedRows();
+            for (int rowId : selectedRows) {
+                Account accToDel = accountsTableModel.getAccountByRow(rowId);
+                bank.deleteAccount(accToDel);
+            }
+            showCustomer(currentCust);
+        });
+        ctxMenu.add(delAcc);
+
         accountsTable.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {

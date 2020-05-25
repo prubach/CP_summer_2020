@@ -14,6 +14,10 @@ public class Bank implements Serializable {
 
     private Integer lastCustomerId=0;
 
+    public void deleteAccount(Account accToDel) {
+        accountList.remove(accToDel);
+    }
+
     public Customer nextCustomer(Customer curCustomer) {
         int curCustIdx = customerList.indexOf(curCustomer);
         if ((curCustIdx >= 0) && (curCustIdx < customerList.size()-1)) {

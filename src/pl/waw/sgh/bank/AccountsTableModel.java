@@ -16,6 +16,10 @@ public class AccountsTableModel extends DefaultTableModel {
         super(cols, 0);
     }
 
+    public Account getAccountByRow(int rowId) {
+        return accountList.get(rowId);
+    }
+
     public void clearTable() {
         accountList.clear();
         dataVector.clear();
