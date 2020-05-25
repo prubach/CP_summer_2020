@@ -13,7 +13,7 @@ public class PlayWithBank {
 
             Account a2 = myBank.newSavingsAccount("EUR", c2);
             a1.charge(40d);
-            myBank.transfer(4, 1, 60d);
+            myBank.transfer(0, 1, 60d);
         }
         // Only as a wrapper to the whole application - to trace bugs
         /*catch (Exception be) {
