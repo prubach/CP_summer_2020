@@ -13,7 +13,6 @@
       <opaque value="true"/>
     </properties>
     <border type="none" title="Customer Data" title-position="3">
-      <font name="Courier New" size="36" style="1"/>
       <title-color color="-16740463"/>
     </border>
     <children>
@@ -31,7 +30,6 @@
         <properties>
           <background color="-5197648"/>
           <editable value="false"/>
-          <font name="Courier New" size="18" style="1"/>
           <foreground color="-16740463"/>
           <horizontalAlignment value="0"/>
           <text value="First Name"/>
@@ -46,7 +44,6 @@
         <properties>
           <background color="-5197648"/>
           <editable value="false"/>
-          <font name="Courier New" size="18" style="1"/>
           <foreground color="-16740463"/>
           <horizontalAlignment value="0"/>
           <text value="Last Name"/>
@@ -61,7 +58,6 @@
         <properties>
           <background color="-5131855"/>
           <editable value="false"/>
-          <font name="Courier New" size="18" style="1"/>
           <foreground color="-16740463"/>
           <text value="E-mail Adress"/>
         </properties>
@@ -74,7 +70,6 @@
         </constraints>
         <properties>
           <background color="-16740463"/>
-          <font name="Courier New" size="18" style="1"/>
           <foreground color="-5131855"/>
           <horizontalAlignment value="0"/>
           <text value="..."/>
@@ -88,7 +83,6 @@
         </constraints>
         <properties>
           <background color="-16740463"/>
-          <font name="Courier New" size="18" style="1"/>
           <foreground color="-5131855"/>
           <horizontalAlignment value="0"/>
           <text value="..."/>
@@ -102,7 +96,6 @@
         </constraints>
         <properties>
           <background color="-16740463"/>
-          <font name="Courier New" size="18" style="1"/>
           <foreground color="-5131855"/>
           <horizontalAlignment value="0"/>
           <text value="..."/>
@@ -125,7 +118,6 @@
             <properties>
               <background color="-5131855"/>
               <borderPainted value="false"/>
-              <font name="Courier New" size="16" style="1"/>
               <foreground color="-16740463"/>
               <hideActionText value="true"/>
               <horizontalTextPosition value="0"/>
@@ -143,7 +135,6 @@
             <properties>
               <background color="-5131855"/>
               <borderPainted value="false"/>
-              <font name="Courier New" size="16" style="1"/>
               <foreground color="-16740463"/>
               <hideActionText value="true"/>
               <horizontalTextPosition value="0"/>
