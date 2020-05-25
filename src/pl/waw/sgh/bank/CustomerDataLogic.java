@@ -3,6 +3,8 @@ package pl.waw.sgh.bank;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public class CustomerDataLogic extends CustomerData {
 
@@ -11,6 +13,8 @@ public class CustomerDataLogic extends CustomerData {
     private Bank bank;
 
     private Customer currentCust;
+
+    private JPopupMenu ctxMenu;
 
     public CustomerDataLogic(JFrame mainWindow, Bank bank) {
         super();
@@ -49,6 +53,41 @@ public class CustomerDataLogic extends CustomerData {
                 Customer prevCust = bank.previousCustomer(currentCust);
                 if (prevCust!=null)
                     showCustomer(prevCust);
+            }
+        });
+        // Context Menu
+        ctxMenu = new JPopupMenu("Operations on accounts");
+        JMenuItem newSavingsAcc = new JMenuItem("New Savings Account");
+        JMenuItem newDabitAcc = new JMenuItem("New Debit Account");
+        ctxMenu.add(newSavingsAcc);
+        ctxMenu.add(newDabitAcc);
+
+        accountsTable.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if (e.isPopupTrigger()) {
+                    ctxMenu.show(e.getComponent(), e.getX(), e.getY());
+                }
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
             }
         });
     }
