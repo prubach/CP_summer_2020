@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 
 public abstract class Account implements Serializable {
 
-    private static Integer lastAccountId = 0;
+   // private static Integer lastAccountId = 0;
 
     private Integer id;
 
@@ -15,11 +15,11 @@ public abstract class Account implements Serializable {
 
     private Customer customer;
 
-    public Account(String currency, Customer customer) {
+    public Account(String currency, Customer customer, Integer accountId) {
         this.balance = new BigDecimal(0);
         this.currency = currency;
         this.customer = customer;
-        this.id = lastAccountId++;
+        this.id = accountId;
     }
 
     public void deposit(Double amount) {
@@ -43,10 +43,6 @@ public abstract class Account implements Serializable {
                     "Not enough money on account, requested %f, found %f", amount, balance));
         }
         this.balance = balance.subtract(amount);
-    }
-
-    public static Integer getLastAccountId() {
-        return lastAccountId;
     }
 
     public Integer getId() {

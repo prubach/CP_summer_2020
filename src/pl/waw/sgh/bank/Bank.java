@@ -10,6 +10,10 @@ public class Bank implements Serializable {
 
     private List<Account> accountList = new ArrayList<>();
 
+    private Integer lastAccountId=1000;
+
+    private Integer lastCustomerId=0;
+
     public Customer nextCustomer(Customer curCustomer) {
         int curCustIdx = customerList.indexOf(curCustomer);
         if ((curCustIdx >= 0) && (curCustIdx < customerList.size()-1)) {
@@ -28,10 +32,8 @@ public class Bank implements Serializable {
         }
     }
 
-
-
     public Customer newCustomer(String firstName, String lastName, String email) {
-        Customer c = new Customer(firstName, lastName, email);
+        Customer c = new Customer(firstName, lastName, email, lastCustomerId++);
         customerList.add(c);
         return c;
     }
@@ -39,9 +41,9 @@ public class Bank implements Serializable {
     public Account newAccount(boolean isDebitAccount, String currency, Customer customer) {
         Account a;
         if (isDebitAccount) {
-            a = new DebitAccount(currency, customer);
+            a = new DebitAccount(currency, customer, lastAccountId++);
         } else {
-            a = new SavingsAccount(currency, customer);
+            a = new SavingsAccount(currency, customer, lastAccountId++);
         }
         accountList.add(a);
         return a;

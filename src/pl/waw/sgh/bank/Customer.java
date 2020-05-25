@@ -4,8 +4,6 @@ import java.io.Serializable;
 
 public class Customer implements Serializable {
 
-    private static Integer lastCustomerId = 0;
-
     private Integer id;
 
     private String firstName;
@@ -14,11 +12,11 @@ public class Customer implements Serializable {
 
     private String email;
 
-    public Customer(String firstName, String lastName, String email) {
+    public Customer(String firstName, String lastName, String email, Integer customerId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.id = lastCustomerId++;
+        this.id = customerId;
     }
 
     public Integer getId() {

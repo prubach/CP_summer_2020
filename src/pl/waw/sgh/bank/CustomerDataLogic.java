@@ -31,10 +31,6 @@ public class CustomerDataLogic extends CustomerData {
                 currentCust = newCust;
                 JOptionPane.showMessageDialog(null, "Saving the customer: "
                         + firstNameTextField.getText() + " bank: " + bank.toString());
-                Account newAcc = bank.newAccount(true, "EUR", newCust);
-                accountsTableModel.addRow(newAcc);
-                newAcc = bank.newAccount(false, "EUR", newCust);
-                accountsTableModel.addRow(newAcc);
             }
         });
         nextButton.addActionListener(new ActionListener() {
@@ -58,7 +54,21 @@ public class CustomerDataLogic extends CustomerData {
         // Context Menu
         ctxMenu = new JPopupMenu("Operations on accounts");
         JMenuItem newSavingsAcc = new JMenuItem("New Savings Account");
+        newSavingsAcc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Account newAcc = bank.newAccount(false, "EUR", currentCust);
+                accountsTableModel.addRow(newAcc);
+            }});
+
         JMenuItem newDabitAcc = new JMenuItem("New Debit Account");
+        newDabitAcc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Account newAcc = bank.newAccount(true, "EUR", currentCust);
+                accountsTableModel.addRow(newAcc);
+            }});
+
         ctxMenu.add(newSavingsAcc);
         ctxMenu.add(newDabitAcc);
 
