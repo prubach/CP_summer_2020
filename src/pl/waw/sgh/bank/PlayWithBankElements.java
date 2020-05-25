@@ -8,6 +8,8 @@ public class PlayWithBankElements {
         Customer c2 = new Customer("Anna", "Smith", "anna.smith@sgh.waw.pl");
         System.out.println(c2);
 
+
+
         Account a1 = new DebitAccount("EUR", c1);
         a1.deposit(150d);
 

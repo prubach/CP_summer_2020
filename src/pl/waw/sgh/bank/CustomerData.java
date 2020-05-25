@@ -20,7 +20,10 @@ public class CustomerData {
     protected JTextField customerIDtextField;
     protected JTable accountsTable;
 
+    protected AccountsTableModel accountsTableModel = new AccountsTableModel();
+
     private void createUIComponents() {
+        accountsTable = new JTable(accountsTableModel);
         // TODO: place custom component creation code here
     }
 
@@ -39,6 +42,7 @@ public class CustomerData {
      * @noinspection ALL
      */
     private void $$$setupUI$$$() {
+        createUIComponents();
         mainCustomerPanel = new JPanel();
         mainCustomerPanel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(10, 2, new Insets(2, 1, 1, 1), -1, -1));
         mainCustomerPanel.setBackground(new Color(-5197648));
@@ -137,7 +141,6 @@ public class CustomerData {
         customerIDtextField.setEditable(false);
         customerIDtextField.setEnabled(false);
         mainCustomerPanel.add(customerIDtextField, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        accountsTable = new JTable();
         mainCustomerPanel.add(accountsTable, new com.intellij.uiDesigner.core.GridConstraints(9, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
     }
 
