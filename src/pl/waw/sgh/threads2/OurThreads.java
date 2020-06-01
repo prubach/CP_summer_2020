@@ -15,6 +15,11 @@ public class OurThreads {
         Notifier n1 = new Notifier(msg);
         Thread t1 = new Thread(w1);
         t1.start();
+        Waiter w2 = new Waiter(msg);
+        Thread t3 = new Thread(w2);
+        t3.start();
+
+
 
         Thread t2 = new Thread(n1);
         t2.start();

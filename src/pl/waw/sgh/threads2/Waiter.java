@@ -24,6 +24,7 @@ public class Waiter implements Runnable {
         synchronized (msg) {
             try {
                 msg.wait();
+                System.out.println(msg.getMsg());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

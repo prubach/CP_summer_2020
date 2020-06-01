@@ -15,7 +15,9 @@ public class Notifier implements Runnable {
         try {
             Thread.sleep(2000);
             synchronized (msg) {
-                msg.notify();
+                //msg.notify();
+                msg.notifyAll();
+                msg.setMsg("Notification message from: " + myThreadName);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
