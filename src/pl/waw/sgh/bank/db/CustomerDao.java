@@ -120,27 +120,27 @@ public class CustomerDao {
 
 
     public static void main(String[] args) throws Exception {
-        Customer kl1 = new Customer("John", "Brown", "john@brown.com", 0);
-        Customer kl2 = new Customer("Anne", "Smith", "anne@smith.com",0);
+        //Customer kl1 = new Customer("John", "Brown", "john@brown.com", 0);
+        //Customer kl2 = new Customer("Anne", "Smith", "anne@smith.com",0);
 
-        System.out.println("Storing customers");
-        CustomerDao.getInstance().store(kl1);
-        CustomerDao.getInstance().store(kl2);
+//        System.out.println("Storing customers");
+//        CustomerDao.getInstance().store(kl1);
+//        CustomerDao.getInstance().store(kl2);
 
-//        //CustomerDao.getInstance().delete(3);
+        //        //CustomerDao.getInstance().delete(3);
 //
 //        CustomerDao.getInstance().update(4, "Joanne", "D'Arc", "email");
 //
-//        System.out.println("Retrieving customers");
-//        List<Customer> customers = CustomerDao.getInstance().retrieveCustomers();
-//        for (Customer customer : customers) {
-//            System.out.println("-----------------------------");
-//            System.out.println("ID: " + customer.getCustomerID());
-//            System.out.println("FirstName: " + customer.getFirstName());
-//            System.out.println("LastName: " + customer.getLastName());
-//            System.out.println("Email: " + customer.getEmail());
-//            System.out.println("-----------------------------");
-//        }
+        System.out.println("Retrieving customers");
+        List<Customer> customers = CustomerDao.getInstance().retrieveCustomers();
+        for (Customer customer : customers) {
+            System.out.println("-----------------------------");
+            System.out.println("ID: " + customer.getId());
+            System.out.println("FirstName: " + customer.getFirstName());
+            System.out.println("LastName: " + customer.getLastName());
+            System.out.println("Email: " + customer.getEmail());
+            System.out.println("-----------------------------");
+        }
 
     }
 }
