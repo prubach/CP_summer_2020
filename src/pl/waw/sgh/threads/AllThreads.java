@@ -11,8 +11,10 @@ public class AllThreads {
         myThread2.start();
 
         try {
-            Thread.sleep(2000);
-            myThread1.interrupt();
+            ///Thread.sleep(2000);
+            //myThread1.interrupt();
+            myThread1.join();
+            System.out.println("MyThread1 it: " + myThread1.getIterator());
 
         } catch (InterruptedException e) {
             e.printStackTrace();

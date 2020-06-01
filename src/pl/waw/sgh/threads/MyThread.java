@@ -9,6 +9,10 @@ public class MyThread extends Thread {
         this.name = name;
     }
 
+    public int getIterator() {
+        return iterator;
+    }
+
     @Override
     public void run() {
         try {
